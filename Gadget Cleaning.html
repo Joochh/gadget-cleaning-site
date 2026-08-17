@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseClean | Premium Tech & Gadget Detailing</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+
+    header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #334155;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem; }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { background: var(--primary-dark); }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid #334155;
+      padding: 1.8rem;
+      border-radius: 12px;
+    }
+    .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+    .card .price { font-size: 1.4rem; font-weight: bold; margin-top: 1rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #334155;
+      color: var(--text-muted);
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚡ PulseClean</div>
+    <a href="#services" class="btn">View Services</a>
+  </header>
+
+  <section class="hero">
+    <h1>Restore Your Tech to Factory Clean</h1>
+    <p>Professional deep cleaning, dust removal, and sanitization for smartphones, mechanical keyboards, laptops, and gaming consoles.</p>
+    <a href="#contact" class="btn">Book a Cleaning</a>
+  </section>
+
+  <section class="services" id="services">
+    <div class="card">
+      <h3>📱 Mobile & Tablet Refresh</h3>
+      <p>Ultrasonic port clearing, speaker mesh deep-clean, display oleophobic coating re-application, and microbial sanitization.</p>
+      <div class="price">$19.99</div>
+    </div>
+    <div class="card">
+      <h3>⌨️ Keyboard & Gear Detailing</h3>
+      <p>Complete keycap teardown, switch housing debris extraction, PCB brush, and custom casing sonic wash.</p>
+      <div class="price">$34.99</div>
+    </div>
+    <div class="card">
+      <h3>💻 Laptop & Console Thermal Overhaul</h3>
+      <p>Internal dust extraction, heatsink flush, fan lubrication, and high-performance thermal paste replacement.</p>
+      <div class="price">$59.99</div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Hosted on Azure Static Web Apps • Free Tier Demo</p>
+    <p>Contact us at hello@pulseclean-demo.com</p>
+  </footer>
+
+</body>
+</html>
